@@ -5,7 +5,11 @@ public class Person {
     private String firstname;
     private String age;
 
-
+    public Person(String lastname, String firstname, String age) {
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.age = age;
+    }
 
     public String getLastname() {
         return lastname;
@@ -29,5 +33,14 @@ public class Person {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "lastname='" + lastname + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }
